@@ -32,90 +32,72 @@
               </li>
             </ul>
           </nav>
-          <h1 class="page-header__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
       </header>
 
       <main class="page-main">
+
+        <div class="banner">
+          <h1 class="banner__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+        </div>
+
         <section class="form">
           <div class="form-section">
             <h2 class="form-section__title">
               Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
             </h2>
-              <form class="form-box" action="https://echo.htmlacademy.ru">
+              <form class="form-container" action="https://echo.htmlacademy.ru">
                 <fieldset class="form-box form-box__name">
                   <legend class="form-box__title form-box__title-disabled">ФИО</legend>
-                  <label class="form-box__subtitle" for="surname">
-                    Фамилия:
-                    <input class="form-box__input" type="text" id="surname" placeholder="Укажите фамилию *" required>
-                  </label>
-                  <label class="form-box__subtitle" for="name">
-                    Имя:
-                    <input class="form-box__input" type="text" id="name" placeholder="Введите ваше имя *" required>
-                  </label>
-                  <label class="form-box__subtitle" for="patronymic">
-                    Отчество:
-                    <input class="form-box__input" type="text" id="patronymic" placeholder="Ну и отчество тоже">
-                  </label>
+                  <input class="form-box__input" type="text" id="surname" placeholder="Укажите фамилию *" required>
+                    <label class="form-box__subtitle" for="surname">Фамилия:</label>
+                  <input class="form-box__input" type="text" id="name" placeholder="Введите ваше имя *" required>
+                    <label class="form-box__subtitle" for="name">Имя:</label>
+                  <input class="form-box__input" type="text" id="patronymic" placeholder="Ну и отчество тоже">
+                    <label class="form-box__subtitle" for="patronymic">Отчество:</label>
+
                 </fieldset>
                 <fieldset class="form-box form-box__achievements">
                   <legend class="form-box__title">Ваши безбашенные достижения в путешествии</legend>
-                  <label class="form-box__text">
-                    <input class="form-box__checkbox" type="checkbox" name="shark-selfie" value="shark-selfie" checked>
-                    Сделал селфи с акулой
-                  </label>
-                  <label class="form-box__text">
-                    <input class="form-box__checkbox" type="checkbox" name="beach" value="beach" checked>
-                    Обгорел на пляже
-                  </label>
-                  <label class="form-box__text">
-                    <input class="form-box__checkbox" type="checkbox" name="chuck-norris" value="chuck-norris">
-                    Видел Чака Норриса
-                  </label>
-                  <label class="form-box__text">
-                    <input class="form-box__checkbox" type="checkbox" name="souvenirs" value="souvenirs">
-                    Накупил сувениров
-                  </label>
-                  <label class="form-box__text">
-                    <input class="form-box__checkbox" type="checkbox" name="held-the-tower" value="held-the-tower" checked>
-                    Удержал башню
-                  </label>
-                  <label class="form-box__text">
-                    <input class="form-box__checkbox" type="checkbox" name="hotel" value="hotel">
-                    Разгромил отель
-                  </label>
+                  <input class="form-box__checkbox" type="checkbox" id="shark" name="shark-selfie" value="shark-selfie" checked>
+                    <label class="form-box__text" for="shark">Сделал селфи с акулой</label>
+                  <input class="form-box__checkbox" type="checkbox" id="beach" name="beach" value="beach" checked>
+                    <label class="form-box__text" for="beach">Обгорел на пляже</label>
+                  <input class="form-box__checkbox" type="checkbox" id="cn" name="chuck-norris" value="chuck-norris">
+                    <label class="form-box__text" for="cn">Видел Чака Норриса</label>
+                  <input class="form-box__checkbox" type="checkbox" id="souvenirs" name="souvenirs" value="souvenirs">
+                    <label class="form-box__text" for="souvenirs">Накупил сувениров</label>
+                  <input class="form-box__checkbox" type="checkbox" id="tower" name="held-the-tower" value="held-the-tower" checked>
+                    <label class="form-box__text" for="tower">Удержал башню</label>
+                  <input class="form-box__checkbox" type="checkbox"  id="hotel" name="hotel" value="hotel">
+                    <label class="form-box__text" for="hotel">Разгромил отель</label>
                 </fieldset>
+
                 <fieldset class="form-box form-box__contacts">
                   <legend class="form-box__title form-box__title-disabled">Контактная информация</legend>
-                  <label class="form-box__subtitle">
-                    <input class="form-box__input" type="tel" name="tel" placeholder="Номер, пожалуйста">
-                    Номер телефона
-                    <span class="form-box__logo"></span>
-                  </label>
-                  <label class="form-box__subtitle">
-                    <input class="form-box__input" type="email" name="email" placeholder="Введите почту *" required>
-                    Адрес почты
-                    <span class="form-box__logo"></span>
-                  </label>
+                  <input class="form-box__input" type="tel" id="tel" name="tel" placeholder="Номер, пожалуйста">
+                    <label class="form-box__subtitle" for="tel">Номер телефона</label>
+                      <span class="form-box__logo"></span>
+                  <input class="form-box__input" type="email" id="email" name="email" placeholder="Введите почту *" required>
+                    <label class="form-box__subtitle" for="email">Адрес почты</label>
+                      <span class="form-box__logo"></span>
                 </fieldset>
+
                 <fieldset class="form-box form-box__app">
                   <legend class="form-box__title">С каким приложением путешествовали?</legend>
-                  <label class="form-box__text">
-                    <input class="form-box__radio" type="radio" name="oc" value="ios" checked>
-                    Pink для iOS
-                  </label>
-                  <label class="form-box__text">
-                    <input class="form-box__radio" type="radio" name="oc" value="android">
-                    Pink на Android
-                  </label>
-                  <label class="form-box__text">
-                    <input class="form-box__radio" type="radio" name="oc" value="windows">
-                    Windows Phone
-                  </label>
+                  <input class="form-box__radio" type="radio" id="ios" name="oc" value="ios" checked>
+                    <label class="form-box__text" for="ios">Pink для iOS</label>
+                  <input class="form-box__radio" type="radio" id="android" name="oc" value="android">
+                    <label class="form-box__text" for="android">Pink на Android</label>
+                  <input class="form-box__radio" type="radio" id="windows" name="oc" value="windows">
+                    <label class="form-box__text" for="windows">Windows Phone</label>
                 </fieldset>
+
                 <fieldset class="form-box form-box__review">
                   <legend class="form-box__title">Опишите свои эмоции</legend>
-                  <textarea class="form-box__textarea" name="text">Можно прям в красках, не стесняясь в выражениях</textarea>
+                    <label class="visually-hidden" for="text">Можно прям в красках, не стесняясь в выражениях</label>
+                  <textarea class="form-box__textarea" id="text" name="text">Можно прям в красках, не стесняясь в выражениях</textarea>
                 </fieldset>
+
                 <div class="form-box">
                   <button class="form-box__button button-rectangular" type="submit">Отправить форму</button>
                   <span class="form-box__button-text">* — обязательные поля</span>
