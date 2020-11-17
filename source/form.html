@@ -6,12 +6,12 @@
   </head>
   <body class="page__body">
     <header class="page-header">
-      <a><img src="https://via.placeholder.com/74x23"></a>
+      <a href="index.html"><img src="https://via.placeholder.com/74x23"></a>
         <button class="page-header__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
           <nav class="main-nav">
             <ul class="main-nav__list site-list">
               <li class="site-list__item">
-                <a>
+                <a href="index.html">
                   Главная
                 </a>
               </li>
@@ -41,66 +41,66 @@
         </div>
 
         <section class="form">
-          <div class="form-section">
-            <h2 class="form-section__title">
-              Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
-            </h2>
+          <div class="form-wrapper">
+            <div class="page-heading">
+            <h2 class="page-heading__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</h2>
+            </div>
               <form class="form-container" action="https://echo.htmlacademy.ru">
-                <fieldset class="form-box form-box__name">
-                  <legend class="form-box__title form-box__title-disabled">ФИО</legend>
-                  <input class="form-box__input" type="text" id="surname" placeholder="Укажите фамилию *" required>
-                    <label class="form-box__subtitle" for="surname">Фамилия:</label>
-                  <input class="form-box__input" type="text" id="name" placeholder="Введите ваше имя *" required>
-                    <label class="form-box__subtitle" for="name">Имя:</label>
-                  <input class="form-box__input" type="text" id="patronymic" placeholder="Ну и отчество тоже">
-                    <label class="form-box__subtitle" for="patronymic">Отчество:</label>
+                <fieldset class="form-name">
+                  <legend class="form-container__title form-container__title--disabled">ФИО</legend>
+                  <input class="form-container__input" type="text" id="surname" placeholder="Укажите фамилию *" required>
+                    <label class="form-container__subtitle" for="surname">Фамилия:</label>
+                  <input class="form-container__input" type="text" id="name" placeholder="Введите ваше имя *" required>
+                    <label class="form-container__subtitle" for="name">Имя:</label>
+                  <input class="form-container__input" type="text" id="patronymic" placeholder="Ну и отчество тоже">
+                    <label class="form-container__subtitle" for="patronymic">Отчество:</label>
 
                 </fieldset>
-                <fieldset class="form-box form-box__achievements">
-                  <legend class="form-box__title">Ваши безбашенные достижения в путешествии</legend>
-                  <input class="form-box__checkbox" type="checkbox" id="shark" name="shark-selfie" value="shark-selfie" checked>
-                    <label class="form-box__text" for="shark">Сделал селфи с акулой</label>
-                  <input class="form-box__checkbox" type="checkbox" id="beach" name="beach" value="beach" checked>
-                    <label class="form-box__text" for="beach">Обгорел на пляже</label>
-                  <input class="form-box__checkbox" type="checkbox" id="cn" name="chuck-norris" value="chuck-norris">
-                    <label class="form-box__text" for="cn">Видел Чака Норриса</label>
-                  <input class="form-box__checkbox" type="checkbox" id="souvenirs" name="souvenirs" value="souvenirs">
-                    <label class="form-box__text" for="souvenirs">Накупил сувениров</label>
-                  <input class="form-box__checkbox" type="checkbox" id="tower" name="held-the-tower" value="held-the-tower" checked>
-                    <label class="form-box__text" for="tower">Удержал башню</label>
-                  <input class="form-box__checkbox" type="checkbox"  id="hotel" name="hotel" value="hotel">
-                    <label class="form-box__text" for="hotel">Разгромил отель</label>
+                <fieldset class="form-achievements">
+                  <legend class="form-container__title">Ваши безбашенные достижения в путешествии</legend>
+                  <input class="form-container__checkbox" type="checkbox" id="shark" name="shark-selfie" value="shark-selfie" checked>
+                    <label class="form-container__text" for="shark">Сделал селфи с акулой</label>
+                  <input class="form-container__checkbox" type="checkbox" id="beach" name="beach" value="beach" checked>
+                    <label class="form-container__text" for="beach">Обгорел на пляже</label>
+                  <input class="form-container__checkbox" type="checkbox" id="cn" name="chuck-norris" value="chuck-norris">
+                    <label class="form-container__text" for="cn">Видел Чака Норриса</label>
+                  <input class="form-container__checkbox" type="checkbox" id="souvenirs" name="souvenirs" value="souvenirs">
+                    <label class="form-container__text" for="souvenirs">Накупил сувениров</label>
+                  <input class="form-container__checkbox" type="checkbox" id="tower" name="held-the-tower" value="held-the-tower" checked>
+                    <label class="form-container__text" for="tower">Удержал башню</label>
+                  <input class="form-container__checkbox" type="checkbox"  id="hotel" name="hotel" value="hotel">
+                    <label class="form-container__text" for="hotel">Разгромил отель</label>
                 </fieldset>
 
-                <fieldset class="form-box form-box__contacts">
-                  <legend class="form-box__title form-box__title-disabled">Контактная информация</legend>
-                  <input class="form-box__input" type="tel" id="tel" name="tel" placeholder="Номер, пожалуйста">
-                    <label class="form-box__subtitle" for="tel">Номер телефона</label>
-                      <span class="form-box__logo"></span>
-                  <input class="form-box__input" type="email" id="email" name="email" placeholder="Введите почту *" required>
-                    <label class="form-box__subtitle" for="email">Адрес почты</label>
-                      <span class="form-box__logo"></span>
+                <fieldset class="form-contacts">
+                  <legend class="form-container__title form-container__title--disabled">Контактная информация</legend>
+                  <input class="form-container__input" type="tel" id="tel" name="tel" placeholder="Номер, пожалуйста">
+                    <label class="form-container__subtitle" for="tel">Номер телефона</label>
+                      <span class="form-container__logo"></span>
+                  <input class="form-container__input" type="email" id="email" name="email" placeholder="Введите почту *" required>
+                    <label class="form-container__subtitle" for="email">Адрес почты</label>
+                      <span class="form-container__logo"></span>
                 </fieldset>
 
-                <fieldset class="form-box form-box__app">
-                  <legend class="form-box__title">С каким приложением путешествовали?</legend>
-                  <input class="form-box__radio" type="radio" id="ios" name="oc" value="ios" checked>
-                    <label class="form-box__text" for="ios">Pink для iOS</label>
-                  <input class="form-box__radio" type="radio" id="android" name="oc" value="android">
-                    <label class="form-box__text" for="android">Pink на Android</label>
-                  <input class="form-box__radio" type="radio" id="windows" name="oc" value="windows">
-                    <label class="form-box__text" for="windows">Windows Phone</label>
+                <fieldset class="form-app">
+                  <legend class="form-container__title">С каким приложением путешествовали?</legend>
+                  <input class="form-container__radio" type="radio" id="ios" name="oc" value="ios" checked>
+                    <label class="form-container__text" for="ios">Pink для iOS</label>
+                  <input class="form-container__radio" type="radio" id="android" name="oc" value="android">
+                    <label class="form-container__text" for="android">Pink на Android</label>
+                  <input class="form-container__radio" type="radio" id="windows" name="oc" value="windows">
+                    <label class="form-container__text" for="windows">Windows Phone</label>
                 </fieldset>
 
-                <fieldset class="form-box form-box__review">
-                  <legend class="form-box__title">Опишите свои эмоции</legend>
+                <fieldset class="form-review">
+                  <legend class="form-container__title">Опишите свои эмоции</legend>
                     <label class="visually-hidden" for="text">Можно прям в красках, не стесняясь в выражениях</label>
-                  <textarea class="form-box__textarea" id="text" name="text">Можно прям в красках, не стесняясь в выражениях</textarea>
+                  <textarea class="form-container__textarea" id="text" name="text">Можно прям в красках, не стесняясь в выражениях</textarea>
                 </fieldset>
 
-                <div class="form-box">
-                  <button class="form-box__button button-rectangular" type="submit">Отправить форму</button>
-                  <span class="form-box__button-text">* — обязательные поля</span>
+                <div class="form-container__button">
+                  <button class="button-rectangular" type="submit">Отправить форму</button>
+                  <span class="form-container__button-text">* — обязательные поля</span>
                 </div>
               </form>
           </div>
