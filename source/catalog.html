@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page__body">
     <header class="page-header">
@@ -11,23 +12,23 @@
           <nav class="main-nav">
             <ul class="main-nav__list site-list">
               <li class="site-list__item">
-                <a href="index.html">
+                <a class="site-list__link" href="index.html">
                   Главная
                 </a>
               </li>
               <li class="site-list__item">
-                <a href="catalog.html">
+                <a class="site-list__link" href="catalog.html">
                   Фотографии
                 </a>
               </li>
               <li class="site-list__item">
-                <a href="form.html">
+                <a class="site-list__link" href="form.html">
                   Конкурс
                 </a>
               </li>
               <li class="site-list__item">
-                <a href="https://htmlacademy.ru/intensive/adaptive">
-                   html academy
+                <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">
+                  HTML academy
                 </a>
               </li>
             </ul>
@@ -59,7 +60,7 @@
                       <span class="user-post__time">(5 минут назад)</span>
                       <span class="user-post__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</span>
                       <div class="user-post__like">
-                        <span class="user-post__likes-number">Нравится: 215</span>
+                        <a class="user-post__likes-number">Нравится: 215</a>
                       </div>
                     </div>
                 </div>
@@ -75,7 +76,7 @@
                       <span class="user-post__time">(5 часов назад)</span>
                       <span class="user-post__text">Вчера он на луну летал, сегодня в руки к нам попал.</span>
                       <div class="user-post__like">
-                        <span class="user-post__likes-number">Нравится: 356</span>
+                        <a class="user-post__likes-number">Нравится: 356</a>
                       </div>
                     </div>
                   </div>
@@ -91,7 +92,7 @@
                       <span class="user-post__time">(12 часов назад)</span>
                       <span class="user-post__text">Соседи будут рады!</span>
                       <div class="user-post__like">
-                        <span class="user-post__likes-number">Нравится: 666</span>
+                        <a class="user-post__likes-number">Нравится: 666</a>
                       </div>
                     </div>
                   </div>
@@ -107,7 +108,7 @@
                         <span class="user-post__time">(20 часов назад)</span>
                         <span class="user-post__text">Здесь могла быть ваша цитата о высоком и вечном.</span>
                         <div class="user-post__like">
-                          <span class="user-post__likes-number">Нравится: 215</span>
+                          <a class="user-post__likes-number">Нравится: 215</a>
                         </div>
                       </div>
                     </div>
@@ -123,7 +124,7 @@
                         <span class="user-post__time">(25 часов назад)</span>
                         <span class="user-post__text">Самая кубанская в мире!</span>
                         <div class="user-post__like">
-                          <span class="user-post__likes-number">Нравится: 4</span>
+                          <a class="user-post__likes-number">Нравится: 4</a>
                         </div>
                       </div>
                   </div>
@@ -139,7 +140,7 @@
                           <span class="user-post__time">(40 часов назад)</span>
                           <span class="user-post__text">Где снег-то?</span>
                           <div class="user-post__like">
-                            <span class="user-post__likes-number">Нравится: 150</span>
+                            <a class="user-post__likes-number">Нравится: 150</a>
                           </div>
                         </div>
                     </div>
@@ -155,7 +156,7 @@
                           <span class="user-post__time">(45 часов назад)</span>
                           <span class="user-post__text">Всем GM и взаимные лайки!</span>
                           <div class="user-post__like">
-                            <span class="user-post__likes-number">Нравится: 2560</span>
+                            <a class="user-post__likes-number">Нравится: 2560</a>
                           </div>
                         </div>
                     </div>
@@ -171,15 +172,15 @@
               </div>
               <form class="upload__form" action="https://echo.htmlacademy.ru">
                 <div class="upload__filter upload__filter--wrapper">
-                  <div class="lane"></div>
+                  <input class="lane" type="range"></input>
                   <div class="toggle"></div>
                 </div>
                 <div class="upload__filter upload__filter--wrapper">
-                  <div class="lane"></div>
+                  <input class="lane" type="range"></input>
                   <div class="toggle"></div>
                 </div>
                 <div class="upload__filter upload__filter--wrapper">
-                  <div class="lane"></div>
+                  <input class="lane" type="range"></input>
                   <div class="toggle"></div>
                 </div>
                 <button class="button-round button-round--submit" type="submit">Запостить</button>

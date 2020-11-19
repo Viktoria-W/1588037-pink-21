@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page__body">
     <header class="page-header">
@@ -11,23 +12,23 @@
           <nav class="main-nav">
             <ul class="main-nav__list site-list">
               <li class="site-list__item">
-                <a>
+                <a class="site-list__link">
                   Главная
                 </a>
               </li>
               <li class="site-list__item">
-                <a href="catalog.html">
+                <a class="site-list__link" href="catalog.html">
                   Фотографии
                 </a>
               </li>
               <li class="site-list__item">
-                <a href="form.html">
+                <a class="site-list__link" href="form.html">
                   Конкурс
                 </a>
               </li>
               <li class="site-list__item">
-                <a href="https://htmlacademy.ru/intensive/adaptive">
-                   html academy
+                <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">
+                  HTML academy
                 </a>
               </li>
             </ul>
@@ -40,7 +41,7 @@
             <h2 class="download-app__slogan">Взгляните на жизнь иначе!</h2>
               <img src="https://via.placeholder.com/320x286">
               <div class="download-app__section">
-                <a class="download-app__button button-round">
+                <a class="button-round button-round--download-app">
                   Скачать приложение
                 </a>
                 <div>
@@ -54,7 +55,7 @@
                     <img src="https://via.placeholder.com/44x41">
                   </a>
               </div>
-                <p>
+                <p class="download-app__section-text">
                   Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
                 </p>
               </div>
@@ -64,12 +65,12 @@
         <section class="advantages">
           <div class="advantages-wrapper">
             <h2 class="visually-hidden">Наши преимущества</h2>
-              <h3>
+              <h3 class="advantages__title" >
                 Устали от серости мегаполиса? Нам есть, что вам предложить!
               </h3>
             <ul class="advantages__list">
               <li class="advantages__item advantages__item--mood">
-                <h4 class="advantages__title">
+                <h4 class="advantages__subtitle">
                   Поднимает настроение
                 </h4>
                 <p class="advantages__description">
@@ -77,7 +78,7 @@
                 </p>
               </li>
               <li class="advantages__item advantages__item--world">
-                <h4 class="advantages__title">
+                <h4 class="advantages__subtitle">
                   Меняет мир вокруг
                 </h4>
                 <p class="advantages__description">
@@ -85,7 +86,7 @@
                 </p>
               </li>
               <li class="advantages__item advantages__item--friends">
-                <h4 class="advantages__title">
+                <h4 class="advantages__subtitle">
                   Заводит новых друзей
                 </h4>
                 <p class="advantages__description">
@@ -106,7 +107,7 @@
             <p class="advantages-effect__description">
               Британские ученые провели исследования и доказали,что положительный эффект от использования приложения длится целые сутки!
             </p>
-            <a href="#">
+            <a class="advantages-effect__link" href="#">
               Узнать больше об исследовании
             </a>
           </div>
@@ -128,8 +129,8 @@
                 </p>
               </blockquote>
             </div>
-              <button class="reviews__prev" type="button">Предыдущий отзыв</button>
-              <button class="reviews__next" type="button">Следующий отзыв</button>
+              <button class="reviews__prev" type="button"><span class="visually-hidden">Предыдущий отзыв</span></button>
+              <button class="reviews__next" type="button"><span class="visually-hidden">Следующий отзыв</span></button>
                 <p class="reviews__toggles slider__toggles">
                   <button class="slider__toggle slider__toggle--current" type="button">1</button>
                   <button class="slider__toggle" type="button">2</button>
@@ -142,20 +143,29 @@
           <div class="price-wrapper slider">
             <h2 class="visually-hidden">Наши цены</h2>
             <table class="price-table">
-              <tr class="price-table__column">
-                <th></th>
-                <th>
-                  База 1,99 USD
-                </th>
-                <th class="price-table__hit">
-                  Стандарт 3,99 USD
-                </th>
-                <th>
-                  Анлим 9,99 USD
-                </th>
+              <tr class="price-table__column price-table__head">
+                <td class="price-table__column price-table__column--disabled"></td>
+                <td class="price-table__head price-table__head--price-name">
+                  База
+                  <p class="price-table__head price-table__head--price-number">
+                    1,99 USD
+                  </p>
+                </td>
+                <td class="price-table__head price-table__head--price-name price-table__hit">
+                  Стандарт
+                  <p class="price-table__head price-table__head--price-number">
+                    3,99 USD
+                  </p>
+                </td>
+                <td class="price-table__head price-table__head--price-name">
+                  Анлим
+                  <p class="price-table__head price-table__head--price-number">
+                    9,99 USD
+                  </p>
+                </td>
               </tr>
               <tr class="price-table__column">
-                <td>
+                <td class="price-table__column price-table__column--name">
                   Розовый фильтр
                 </td>
                 <td>
@@ -169,7 +179,7 @@
                 </td>
               </tr>
               <tr class="price-table__column">
-                <td>
+                <td class="price-table__column price-table__column--name">
                   Смайлики
                 </td>
                 <td>
@@ -183,7 +193,7 @@
                 </td>
               </tr>
               <tr class="price-table__column">
-                <td>
+                <td class="price-table__column price-table__column--name">
                   Коментарии
                 </td>
                 <td>
@@ -207,15 +217,15 @@
 
         <section class="main-contacts">
           <div class="main-contacts__wrapper contacts">
-            <h2 class="contacts-title">
+            <span class="contacts-title">
               Остались вопросы? Свяжитесь с нами!
-            </h2>
+            </span>
             <div>
                 <div>
                   <h3 class="contacts-subtitle">
                     Звоните:
                   </h3>
-                  <a class="contacts__phone" href="tel:+78125556666">
+                  <a class="main-contacts__link contacts__phone" href="tel:+78125556666">
                       +7 (812) 555-66-66
                   </a>
                 </div>
@@ -223,7 +233,7 @@
                   <h3 class="contacts-subtitle">
                     Пишите:
                   </h3>
-                  <a class="contacts__email" href="mailto:mail@htmlacademy.ru">
+                  <a class="main-contacts__link contacts__email" href="mailto:mail@htmlacademy.ru">
                       mail@htmlacademy.ru
                   </a>
                 </div>
@@ -231,7 +241,9 @@
                   <h3 class="contacts-subtitle contacts__adress">
                     Приезжайте в гости:
                   </h3>
+                  <a class="main-contacts__link" href="#">
                     ул. Большая Конюшенная, 19/8
+                  </a>
                 </div>
             </div>
           </div>
