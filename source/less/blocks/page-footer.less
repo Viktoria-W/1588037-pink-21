@@ -1,11 +1,11 @@
-.social__list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
+.page-footer__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: center;
 
-.copyright__title {
-  font-size: 14px;
-  line-height: 18px;
-  color: @special-blue;
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }

@@ -3,6 +3,28 @@
   color: @special-blue;
 }
 
+.main-contacts__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-width: 250px;
+  }
+
+  @media (min-width: @desktop-width) {
+    flex-wrap: nowrap;
+  }
+}
+
+.main-contacts__box {
+  @media (min-width: @tablet-width) {
+    margin: 10px 20px;
+  }
+}
+
 .contacts-title {
   font-style: normal;
   font-size: 24px;

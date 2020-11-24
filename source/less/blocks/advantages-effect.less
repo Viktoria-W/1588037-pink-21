@@ -1,5 +1,13 @@
 .advantages-effect {
   text-align: center;
+
+  @media (max-width: @mobile-width-only) {
+    display: none;
+  }
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+  }
 }
 
 .advantages-effect__title {
