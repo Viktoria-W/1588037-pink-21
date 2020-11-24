@@ -7,6 +7,7 @@
   line-height: 120%;
   text-align: center;
   color: @special-blue;
+  margin: 0;
 }
 
 .advantages__list {
@@ -15,6 +16,22 @@
   padding: 0;
   background-color: @basick-gray;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @desktop-width) {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 0 130px;
+  }
+}
+
+.advantages__item {
+  width: 310px;
+
+  @media (min-width: @tablet-width) {
+    align-self: flex-end;
+  }
 }
 
 .advantages__subtitle {

@@ -2,41 +2,22 @@
   background-color: @basick-gray;
 }
 
-.price-table {
-  border-collapse: collapse;
+.price-wrapper {
+  margin: 0 22px;
+  position: relative;
+  min-height: 506px;
+  overflow: hidden;
 }
 
-.price-table__column--disabled {
-  visibility: hidden;
-}
-
-.price-table__column td {
-  border: 2px solid @special-white;
-  border-radius: 1px;
-}
-
-.price-table__column--name {
-  font-size: 14px;
-  line-height: 30px;
-  color: @special-blue;
-}
-
-.price-table__head {
-  background-color: @special-blue;
-  color: @basick-white;
+.price__toggles {
   text-align: center;
-}
+  margin-top: 45px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
 
-.price-table__head--price-name {
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 30px;
-}
 
-.price-table__head--price-number {
-  font-weight: 300;
-  font-size: 18px;
-  line-height: 30px;
-  text-transform: uppercase;
-  margin: 0;
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }

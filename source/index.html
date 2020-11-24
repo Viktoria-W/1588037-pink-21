@@ -3,13 +3,16 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page__body">
     <header class="page-header">
-      <a><img src="https://via.placeholder.com/74x23"></a>
+      <div class="page-header__container">
+      <a class="page-header__logo"><img src="https://via.placeholder.com/74x23"></a>
         <button class="page-header__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-          <nav class="main-nav">
+      </div>
+        <nav class="main-nav">
             <ul class="main-nav__list site-list">
               <li class="site-list__item">
                 <a class="site-list__link">
@@ -39,12 +42,11 @@
         <section class="download-app">
           <div class="download-app__wrapper">
             <h2 class="download-app__slogan">Взгляните на жизнь иначе!</h2>
-              <img src="img/back-mobile.png" width="320" height="286" alt="">
               <div class="download-app__section">
                 <a class="button-round button-round--download-app">
                   Скачать приложение
                 </a>
-                <div>
+                <div class="download-app__section-logo">
                   <a href="#">
                     <img src="https://via.placeholder.com/47x56">
                   </a>
@@ -101,15 +103,17 @@
         <section>
           <div class="advantages-effect">
             <img src="https://via.placeholder.com/238x276">
-            <h4 class="advantages-effect__title">
-              Эффект на 24 часа!
-            </h4>
-            <p class="advantages-effect__description">
-              Британские ученые провели исследования и доказали,что положительный эффект от использования приложения длится целые сутки!
-            </p>
-            <a class="advantages-effect__link" href="#">
-              Узнать больше об исследовании
-            </a>
+            <div class="advantages-effect__container">
+              <h4 class="advantages-effect__title">
+                Эффект на 24 часа!
+              </h4>
+              <p class="advantages-effect__description">
+                Британские ученые провели исследования и доказали,что положительный эффект от использования приложения длится целые сутки!
+              </p>
+              <a class="advantages-effect__link" href="#">
+                Узнать больше об исследовании
+              </a>
+            </div>
           </div>
         </section>
 
@@ -220,8 +224,8 @@
             <span class="contacts-title">
               Остались вопросы? Свяжитесь с нами!
             </span>
-            <div>
-                <div>
+            <div class="main-contacts__container">
+                <div class="main-contacts__box">
                   <h3 class="contacts-subtitle">
                     Звоните:
                   </h3>
@@ -229,7 +233,7 @@
                       +7 (812) 555-66-66
                   </a>
                 </div>
-                <div>
+                <div class="main-contacts__box">
                   <h3 class="contacts-subtitle">
                     Пишите:
                   </h3>
@@ -237,7 +241,7 @@
                       mail@htmlacademy.ru
                   </a>
                 </div>
-                <div>
+                <div class="main-contacts__box">
                   <h3 class="contacts-subtitle contacts__adress">
                     Приезжайте в гости:
                   </h3>
@@ -285,13 +289,14 @@
               </ul>
             <div class="page-footer__copyright copyright">
               <a>
-              <h3 class="copyright__title">
+              <span class="copyright__title">
                 Разработано
-              </h3>
+              </span>
                 <img src="https://via.placeholder.com/27x34">
               </a>
             </div>
           </div>
         </footer>
+
   </body>
 </html>
