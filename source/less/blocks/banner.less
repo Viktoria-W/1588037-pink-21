@@ -1,3 +1,19 @@
+.banner {
+  background-image: url("../img/back-mobile.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: @basick-blue-background;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/back-tablet.png");
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../img/back-desktop.png");
+  }
+}
+
 .banner__title {
   display: block;
   box-sizing: border-box;
@@ -5,5 +21,15 @@
   line-height: 33px;
   text-align: center;
   color: @basick-white;
-  background-color: @basick-blue-background;
+  padding: 102px 42px 51px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 50px;
+    line-height: 68px;
+    padding: 191px 20px 74px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 184px 40px 104px;
+  }
 }
