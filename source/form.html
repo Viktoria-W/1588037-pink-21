@@ -3,13 +3,16 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page__body">
     <header class="page-header">
-      <a href="index.html"><img src="https://via.placeholder.com/74x23"></a>
-        <button class="page-header__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-          <nav class="main-nav">
+      <div class="page-header__container">
+        <a class="page-header__logo" href="index.html"><img src="https://via.placeholder.com/74x23"></a>
+          <button class="page-header__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      </div>
+        <nav class="main-nav">
             <ul class="main-nav__list site-list">
               <li class="site-list__item">
                 <a class="site-list__link" href="index.html">
@@ -39,11 +42,10 @@
         <h1 class="visually-hidden">Страница заполнения формы конкурса от Pink</h1>
         <div class="banner">
           <span class="banner__title">Конкурс на самое безбашенное путешествие с Пинк</span>
-          <img src="img/back-mobile.png" width="320" height="286" alt="">
         </div>
 
         <div class="page-heading">
-          <h2 class="page-heading__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</h2>
+          <span class="page-heading__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</span>
           </div>
 
         <section class="form">
@@ -51,12 +53,15 @@
               <form class="form-container" action="https://echo.htmlacademy.ru">
                 <fieldset class="form__name fieldset-disabled">
                   <legend class="form-container__title form-container__title--disabled">ФИО</legend>
-                  <input class="form-container__input" type="text" id="surname" placeholder="Укажите фамилию *" required>
-                    <label class="form-container__subtitle" for="surname">Фамилия:</label>
-                  <input class="form-container__input" type="text" id="name" placeholder="Введите ваше имя *" required>
-                    <label class="form-container__subtitle" for="name">Имя:</label>
-                  <input class="form-container__input" type="text" id="patronymic" placeholder="Ну и отчество тоже">
-                    <label class="form-container__subtitle" for="patronymic">Отчество:</label>
+                    <label class="form-container__subtitle" for="surname">Фамилия:
+                      <input class="form-container__input" type="text" id="surname" placeholder="Укажите фамилию *" required>
+                    </label>
+                    <label class="form-container__subtitle" for="name">Имя:
+                      <input class="form-container__input" type="text" id="name" placeholder="Введите ваше имя *" required>
+                    </label>
+                    <label class="form-container__subtitle" for="patronymic">Отчество:
+                      <input class="form-container__input" type="text" id="patronymic" placeholder="Ну и отчество тоже">
+                    </label>
                 </fieldset>
 
                 <fieldset class="form__achievements fieldset-disabled">
@@ -77,11 +82,13 @@
 
                 <fieldset class="form__contacts fieldset-disabled">
                   <legend class="form-container__title form-container__title--disabled">Контактная информация</legend>
-                  <input class="form-container__input" type="tel" id="tel" name="tel" placeholder="Номер, пожалуйста">
-                    <label class="form-container__subtitle" for="tel">Номер телефона</label>
+                    <label class="form-container__subtitle form-container__subtitle--tel" for="tel">Номер телефона
+                      <input class="form-container__input form-container__input-tel" type="tel" id="tel" name="tel" placeholder="Номер, пожалуйста">
+                    </label>
                       <span class="form-container__logo"></span>
-                  <input class="form-container__input" type="email" id="email" name="email" placeholder="Введите почту *" required>
-                    <label class="form-container__subtitle" for="email">Адрес почты</label>
+                    <label class="form-container__subtitle form-container__subtitle--email" for="email">Адрес почты
+                      <input class="form-container__input form-container__input--email" type="email" id="email" name="email" placeholder="Введите почту *" required>
+                    </label>
                       <span class="form-container__logo"></span>
                 </fieldset>
 
@@ -138,9 +145,9 @@
             </ul>
           <div class="page-footer__copyright copyright">
             <a>
-            <h3 class="copyright__title">
+            <span class="copyright__title">
               Разработано
-            </h3>
+            </span>
               <img src="https://via.placeholder.com/27x34">
             </a>
           </div>

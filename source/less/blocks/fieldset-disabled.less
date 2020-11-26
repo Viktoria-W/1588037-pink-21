@@ -1,3 +1,10 @@
 .fieldset-disabled {
   border: none;
 }
+
+.fieldset-disabled:not(:first-child) {
+  @media (min-width: @tablet-width) {
+    border: 2px solid @special-white;
+    border-radius: 1px;
+  }
+}
