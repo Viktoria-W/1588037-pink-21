@@ -11,4 +11,47 @@
   line-height: 30px;
   text-align: center;
   color: @special-blue;
+  padding: 20px 20px 52px;
+  display: block;
+  box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+    padding: 70px 119px 78px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 70px 250px 75px;
+  }
+}
+
+.upload__wraper {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 20px;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    padding: 50px 40px;
+  }
+}
+
+.upload__filter {
+  margin: 40px 120px;
+}
+
+.upload__filter:nth-child(2),
+.upload__filter:nth-child(3) {
+  @media (max-width: @mobile-width-only) {
+    display: none;
+  }
+}
+
+.upload__button {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @desktop-width) {
+    flex-direction: row;
+  }
 }

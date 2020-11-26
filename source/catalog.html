@@ -3,13 +3,16 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page__body">
     <header class="page-header">
-      <a href="index.html"><img src="https://via.placeholder.com/74x23"></a>
+      <div class="page-header__container">
+      <a class="page-header__logo" href="index.html"><img src="https://via.placeholder.com/74x23"></a>
         <button class="page-header__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-          <nav class="main-nav">
+      </div>
+        <nav class="main-nav">
             <ul class="main-nav__list site-list">
               <li class="site-list__item">
                 <a class="site-list__link" href="index.html">
@@ -38,13 +41,12 @@
       <main class="page-main">
         <div class="banner">
           <span class="banner__title">Фотографии пользователей</span>
-          <img src="img/back-mobile.png" width="320" height="286" alt="">
         </div>
 
         <section class="user-photos">
           <div class="user-photos__wrapper">
             <div class="page-heading">
-              <h2 class="page-heading__title">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</h2>
+              <span class="page-heading__title">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</span>
             </div>
           </div>
 
@@ -55,11 +57,13 @@
                       <a><img src="https://via.placeholder.com/320x137"></a>
                       <span class="panorama__day">Панорама дня</span>
                     </div>
-                    <div class="user-post__info">
-                      <span class="user-post__name">Анна</span>
-                      <span class="user-post__time">(5 минут назад)</span>
-                      <span class="user-post__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</span>
-                      <div class="user-post__like">
+                    <div class="user-post__info user-post__info--big">
+                      <div>
+                      <span class="user-post__name user-post__name--panorama">Анна</span>
+                      <span class="user-post__time user-post__time--panorama">(5 минут назад)</span>
+                      </div>
+                      <span class="user-post__text user-post__text--panorama">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</span>
+                      <div class="user-post__like user-post__like--panorama">
                         <a class="user-post__likes-number">Нравится: 215</a>
                       </div>
                     </div>
@@ -165,26 +169,30 @@
 
             <section class="upload">
               <div class="upload__title">
-                <h3 class="upload__title-text">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</h3>
+                <span class="upload__title-text">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</span>
               </div>
-              <div class="upload__foto">
-                <a><img src="https://via.placeholder.com/280x374"></a>
+              <div class="upload__wraper">
+                <div class="upload__foto">
+                  <a><img src="https://via.placeholder.com/280x374"></a>
+                </div>
+                <form class="upload__form" action="https://echo.htmlacademy.ru">
+                  <div class="upload__filter upload__filter--wrapper">
+                    <input class="lane" type="range">
+                    <div class="toggle"></div>
+                  </div>
+                  <div class="upload__filter upload__filter--wrapper">
+                    <input class="lane" type="range">
+                    <div class="toggle"></div>
+                  </div>
+                  <div class="upload__filter upload__filter--wrapper">
+                    <input class="lane" type="range">
+                    <div class="toggle"></div>
+                  </div>
+                  <div class="upload__button">
+                    <button class="button-round button-round--submit" type="submit">Запостить</button>
+                    <button class="button-round button-round--reset" type="reset" disabled>Отмена</button>
+                  </div>
               </div>
-              <form class="upload__form" action="https://echo.htmlacademy.ru">
-                <div class="upload__filter upload__filter--wrapper">
-                  <input class="lane" type="range">
-                  <div class="toggle"></div>
-                </div>
-                <div class="upload__filter upload__filter--wrapper">
-                  <input class="lane" type="range">
-                  <div class="toggle"></div>
-                </div>
-                <div class="upload__filter upload__filter--wrapper">
-                  <input class="lane" type="range">
-                  <div class="toggle"></div>
-                </div>
-                <button class="button-round button-round--submit" type="submit">Запостить</button>
-                <button class="button-round button-round--reset" type="reset">Отмена</button>
               </form>
             </section>
             </section>
