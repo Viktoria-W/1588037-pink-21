@@ -1,4 +1,16 @@
 .advantages {
+  background-color: @basick-gray;
+}
+
+.advantages-wrapper {
+  margin: 0 auto;
+
+  @media (min-width: @desktop-width) {
+    max-width: 1200px;
+  }
+}
+
+.advantages__container-title {
   background-color: @basick-white;
 }
 
@@ -14,7 +26,6 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  background-color: @basick-gray;
   text-align: center;
   display: flex;
   flex-direction: column;
